@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root{
+    /* primary colors */
+    --Nutmeg:hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --light-Raspberry: hsl(332deg 66% 91% / 28%);
+
+    /* Neutral colors */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+
+    /* Default Font Size */
+    --D-font:1em;
+
+    /* Font Family's */
+    --young-seriff:"Young Serif", serif;
+    --Outfit:"Outfit", sans-serif;
+
+}
+body{
+    font-family: var(--Outfit);
+    font-size: var(--D-font);
+    font-weight: 400;
+    background: var(--Eggshell);
+    color: var(--Wenge-Brown);
+    margin: 0;
+}
+.card{ 
+    border-radius: 20px;
+    background-color: var(--White);  
+    padding: 2rem;
+    max-width: 42%;
+ }
+ .title-img img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ .heading h1{
+    color: var(--Dark-Charcoal);
+    font-family: var(--young-seriff);
+ }
+ .pr-t-container{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--light-Raspberry);
+ }
+ .pr-t-container h3{
+    margin: 0;
+    color: var(--Dark-Raspberry);
+ }
+ div ul,div ol {
+    padding: 0 0 0 1.5rem;
+ }
+ .pr-t-container ul li::marker{
+    color: var(--Dark-Raspberry);
+ }
+ .pr-t-container ul li ,.ingredients ul li{
+    padding-bottom: 1rem;
+    list-style: var(--Dark-Raspberry);
+ }
+ .pr-t-container ul li div{
+    margin-left: 1rem;
+ }
+ .pr-t-container ul li span{
+    /* padding-left: 1rem; */
+    font-weight: 700;
+ }
+ .ingredients,.instructions{
+    border-bottom: 1px solid var(--Light-Grey) ;
+ }
+ div h2{
+    color: var(--Nutmeg);
+    font-family: var(--young-seriff);
+    font-weight: unset;
+ }
+.ingredients ul li {
+    list-style-type: square;
+}
+div ul li::marker,div ol li::marker,table .odd{
+    color: var(--Nutmeg);
+    font-weight: 800;
+}
+.ingredients ul li div{
+    margin-left: 1rem;
+}
+
+.instructions ol li div{
+    margin-left: 1rem;
+}
+.instructions ol li{
+    line-height: 1.5;
+    padding-bottom: .5rem;
+}
+.instructions ol li span{
+    color: var(--Wenge-Brown);
+    font-weight: 700;  
+}
+table{
+    width: 100%;
+}
+table td{
+    padding: 1rem 1rem 1rem 2rem;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+table tr:last-child>td{
+    border: 0;
+}
+
+@media(max-width:1024px){
+    .card{
+        padding: 0;
+        border-radius: 0;
+        max-width: 100%;
+    }
+    .title-img img{
+        border-radius: 0;
+    }
+    .mb-container{
+        padding: 0 2rem;
+    }
+}
+
